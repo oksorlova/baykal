@@ -5,76 +5,142 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Байкал</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <a href="./index.html"><img src="./images/logo.svg" alt="Логотип">Байкальский отдых Турагенство</a>    
-        <ul>
-            <li><a href="tel:89243541540">8-924-3-541-540</a></li>
-            <li><a href="mailto:baikalholiday@mail.ru">baikalholiday@mail.ru</a></li>
+    <header class="header">
+        <div class="container">
+            <div class="header-blok">
+        <a href="./index.html" class="header-logo"><img src="./images/logo.svg" alt="Логотип"><p class="header-description">Байкальский отдых <span class="header-accent">Турагенство</span></p></a>    
+        <ul class="header-list">
+            <li class="header-item"><a href="tel:89243541540" class="header-contacts">
+                <svg width="24" height="24" class="header-icon">
+                    <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>8-924-3-541-540
+            </a></li>
+            <li class="header-item"><a href="mailto:baikalholiday@mail.ru" class="header-contacts">
+                <svg width="24" height="24" class="header-icon">
+                    <use href="./images/sprite.svg#icon-mail"></use>
+                </svg>
+                baikalholiday@mail.ru</a></li>
         </ul>
-        <button type="button">Оставить заявку</button>
+        <button type="button" class="header-button">Обратный звонок</button>
+        </div>
         <nav>
-            <li><a href="#">Бронирование</a></li>
-            <li><a href="#">Экскурсии</a></li>
-            <li><a href="#">Туры на Байкал</a></li>
-            <li><a href="#">О Байкале</a></li>
-            <li><a href="#">О нас</a></li>
+            <ul class="header-navigation">
+            <li class="navigation-item"><a href="#"class="header-link">Бронирование</a></li>
+            <li class="navigation-item"><a href="#"class="header-link">Экскурсии</a></li>
+            <li class="navigation-item"><a href="#"class="header-link">Туры на Байкал</a></li>
+            <li class="navigation-item"><a href="#"class="header-link">О Байкале</a></li>
+            <li class="navigation-item"><a href="#"class="header-link">О нас</a></li>
+            </ul>
         </nav>
-
+</div>
     </header>
-    <section>
-        <h1>Путешествия по Байкалу</h1>
-        <p>Туры по самому красивому месту России.nПоехали с нами за новыми впечатлениями!</p>
-        <a href="">подобрать тур</a>
+    <main>
+    <section class="hero">
+        <div class="container">
+        <h1 class="hero-title">Путешествия по Байкалу</h1>
+        <p class="hero-text">Туры по самому красивому месту России. Поехали с нами за новыми впечатлениями!</p>
+        <a href="" class="hero-link">подобрать тур</a>
+        <a href="" class="hero-arrow">
+            <svg class="hero-icon" width="13" heihgt="18">
+                <use href="./images/sprite.svg#icon-arrow">
+                </use>
+            </svg>
+        </a>
+        </div>
     </section>
-    <section>
-        <h2>Категории туров</h2>
-        <ul>
-            <li><a href=""><img src="./images/1.jpg" width="256" hight="152" alt="Фото списка"><h3>Турбазы на Байкале</h3></a></li>
-            <li><a href=""><img src="./images/2.jpg" width="256" hight="152" alt="Фото списка"><h3>Экскурсии и туры</h3></a></li>
-            <li><a href=""><img src="./images/3.jpg" width="256" hight="152" alt="Фото списка"><h3>Охота и рыбалка</h3></a></li>
-            <li><a href=""><img src="./images/4.jpg" width="256" hight="152" alt="Фото списка"><h3>Экстрим туры</h3></a></li>
-            <li><a href=""><img src="./images/5.jpg" width="256" hight="152" alt="Фото списка"><h3>Теплоходы, яхты</h3></a></li>
-            <li><a href=""><img src="./images/6.jpg" width="256" hight="152" alt="Фото списка"><h3>Красоты Байкала</h3></a></li>
-            <li><a href=""><img src="./images/7jpg.jpg" width="256" hight="152" alt="Фото списка"><h3>Гостиницы в Улан-Удэ</h3></a></li>
-            <li><a href=""><img src="./images/8.jpg" width="256" hight="152" alt="Фото списка"><h3>Транспорт</h3></a></li>
-            <li><a href=""><img src="./images/9.jpg" width="256" hight="152" alt="Фото списка"><h3>Деловой туризм</h3></a></li>
-            <li><a href=""><img src="./images/10.jpg" width="256" hight="152" alt="Фото списка"><h3>Круизы по Байкалу</h3></a></li>
-            <li><a href=""><img src="./images/11" width="256" hight="152" alt="Фото списка"><h3>Зимние туры</h3></a></li>
-            <li><a href=""><img src="./images/12.jpg" width="256" hight="152" alt="Фото списка"><h3>Карта Байкала</h3></a></li>
+    <section class="categories">
+        <div class="container">
+        <h2 class="visually-hidden">Категории туров</h2>
+        <ul class="categories-list">
+            <li class="categories-item"><a href=""><img src="./images/1.jpg" width="256" hight="152" alt="Фото списка"><div class="categories-subtitle"><h3>Турбазы на Байкале</h3></div></a></li>
+            <li class="categories-item"><a href=""><img src="./images/2.jpg" width="256" hight="152" alt="Фото списка"><div class="categories-subtitle"><h3>Экскурсии и туры</h3></div></a></li>
+            <li class="categories-item"><a href=""><img src="./images/3.jpg" width="256" hight="152" alt="Фото списка"><div class="categories-subtitle"><h3>Охота и рыбалка</h3></div></a></li>
+            <li class="categories-item"><a href=""><img src="./images/4.jpg" width="256" hight="152" alt="Фото списка"><div class="categories-subtitle"><h3>Экстрим туры</h3></div></a></li>
+            <li class="categories-item"><a href=""><img src="./images/5.jpg" width="256" hight="152" alt="Фото списка"><div class="categories-subtitle"><h3>Теплоходы, яхты</h3></div></a></li>
+            <li class="categories-item"><a href=""><img src="./images/6.jpg" width="256" hight="152" alt="Фото списка"><div class="categories-subtitle"><h3>Красоты Байкала</h3></div></a></li>
+            <li class="categories-item"><a href=""><img src="./images/7jpg.jpg" width="256" hight="152" alt="Фото списка"><div class="categories-subtitle"><h3>Гостиницы в Улан-Удэ</h3></div></a></li>
+            <li class="categories-item"><a href=""><img src="./images/8.jpg" width="256" hight="152" alt="Фото списка"><div class="categories-subtitle"><h3>Транспорт</h3></div></a></li>
+            <li class="categories-item"><a href=""><img src="./images/9.jpg" width="256" hight="152" alt="Фото списка"><div class="categories-subtitle"><h3>Деловой туризм</h3></div></a></li>
+            <li class="categories-item"><a href=""><img src="./images/10.jpg" width="256" hight="152" alt="Фото списка"><div class="categories-subtitle"><h3>Круизы по Байкалу</h3></div></a></li>
+            <li class="categories-item"><a href=""><img src="./images/11.jpg" width="256" hight="152" alt="Фото списка"><div class="categories-subtitle"><h3>Зимние туры</h3></div></a></li>
+            <li class="categories-item"><a href=""><img src="./images/12.jpg" width="256" hight="152" alt="Фото списка"><div class="categories-subtitle"><h3>Карта Байкала</h3></div></a></li>
         </ul>
+        </div>
     </section>
-    <section>
-        <h2>Основные направления деятельности</h2>
-        <ul>
-            <li>
+    <section class="directions">
+        <div class="container">
+        <h2 class="directions-title">Основные направления деятельности</h2>
+        <ul class="directions-list">
+            <li class="directions-item">
+                <svg>
+                    <use href="./images/sprite.svg#icon-svg1">
+                    </use>
+                </svg>
                 <p>Групповые и индивидуальные туры по Байкалу для российских и иностранных туристов</p>
             </li>
-            <li>
-                <p>Экскурсии по городу Улан-Удэ, Республике Бурятия, городу Иркутск</p>
+            <li class="directions-item">
+                <svg>
+                    <use href="./images/sprite.svg#icon-svg2">
+                    </use>
+                </svg>
+                <p>Экскурсии по городу Улан-Удэ, Республике Бурятия,городу Иркутск</p>
             </li>
-            <li>
+            <li class="directions-item">
+                <svg>
+                    <use href="./images/sprite.svg#icon-svg3">
+                    </use>
+                </svg>
                 <p>Услуги гидов-переводчиков на любом иностранном языке</p>
             </li>
-            <li>
+            <li class="directions-item">
+                <svg>
+                    <use href="./images/sprite.svg#icon-svg4">
+                    </use>
+                </svg>
                 <p>Круизы и прогулки по Байкалу на теплоходах и катерах</p>
             </li>
-            <li>
+            <li class="directions-item">
+                <svg>
+                    <use href="./images/sprite.svg#icon-svg5">
+                    </use>
+                </svg>
                 <p>Профессиональная организация охоты и рыбалки на Байкале</p>
             </li>
-            <li>
+            <li class="directions-item">
+                <svg>
+                    <use href="./images/sprite.svg#icon-svg6">
+                    </use>
+                </svg>
                 <p>Аренда автотранспорта для экскурсий и пассажирских перевозок</p>
             </li>
-            <li>
+            <li class="directions-item">
+                <svg>
+                    <use href="./images/sprite.svg#icon-svg7">
+                    </use>
+                </svg>
                 <p>Бронирование гостиниц в городе Улан-Удэ и на Байкале</p>
             </li>
-            <li>
+            <li class="directions-item">
+                <svg>
+                    <use href="./images/sprite.svg#icon-svg8">
+                    </use>
+                </svg>
                 <p>Организация индивидуальных туров и VIP-туров на Байкале</p>
             </li>
         </ul>
+        </div>
     </section>
-    <section>
+    <section class="suggestions">
         <h2></h2>
         <ul>
             <li>
@@ -164,6 +230,147 @@
         </ul>
         <a href="">Показать все предложения</a>
     </section>
+    <section class="map">
+        <h2>Карта Байкала</h2>
+    </section>
+    <section class="about">
+        <h2>О Байкале</h2>
+        <p>Озеро Байкал – глубочайшее и древнейшее озеро планеты. Древние жители Прибайкалья называли его Священным морем и
+        считали, что в Байкале нет дна, обожествляли и наделяли его мистическими свойствами. Именно здесь пронзительные чувства
+        и скрытые способности человека находят выплеск.</p>
+        <p>Познается что-то новое не только в природе, но и в самом себе. Многие посетившие Байкал люди утверждают, что озеро
+        оказало большое влияние на их дальнейшую жизнь.</p>
+        <button type="button">Читать подробней</button>
+    </section>
+    <section class="gallery">
+        <h2>Фотогалерея</h2>
+        <a href="">Перейти в раздел</a>
+        <ul>
+            <li><button type="button"></button></li>
+            <li><button type="button"></button></li>
+        </ul>
+        <ul>
+            <li><img src="./images/gallery1.jpg" alt="Галерея 1" width="352"></li>
+            <li><img src="./images/gallery2.jpg" alt="Галерея 2" width="352"></li>
+            <li><img src="./images/gallery3.jpg" alt="Галерея 3" width="352"></li>
+            <li><img src="./images/gallery4.jpg" alt="Галерея 4" width="352"></li>
+            <li><img src="./images/gallery5.jpg" alt="Галерея 5" width="352"></li>
+            <li><img src="./images/gallery6.jpg" alt="Галерея 6" width="352"></li>
+        </ul>
+    </section>
+    <section class="invitation">
+        <h2>Приглашаем на Байкал</h2>
+        <b>Байкальский отдых с нами – это легко!</b>
+        <img src="./images/invite1.jpg" alt="Отдых 1">
+        <img src="./images/invite2.jpg" alt="Отдых 2">
+        <p>На сайте туристического агентства «Байкальский отдых» вы найдете всю необходимую информацию о туристических базах отдыха
+        на озере Байкал. Любите ли вы отличный сервис и европейский комфорт или предпочитаете прочувствовать все трудности
+        дикого туризма и окунуться в атмосферу байкальской природы, здесь вы сможете найти турбазу по своему вкусу.</p>
+        <p>Туристические базы отдыха на Байкале предоставляют разнообразные условия размещения, они отличаются по перечню
+        предлагаемых услуг и уровню комфорта.</p>
+        <p>Есть большие турбазы с полностью организованным питанием и вечерними дискотеками, есть также небольшие малолюдные базы
+        всего с несколькими коттеджами. Можно арендовать отдельный гостевой домик с кухней и готовить пищу самостоятельно.</p>
+        <p>Среди этого многообразия обязательно найдется подходящая, именно вам, база отдыха. Тем не менее, Байкал, до сих пор,
+        обладает всеми оттенками дикого экотуризма, чем и привлекает, уставших от городской суеты, туристов.</p>
+        <p>Если вы предпочитаете зимний байкальский отдых, к Вашим услугам круглогодичные отапливаемые турбазы и различные зимние
+        развлечения. Байкал зимой поражает кристальной чистотой и прозрачностью льда.</p>
+        <p>Туристы очень любят отмечать Новогодние праздники и Рождество на турбазах Байкала, так как новый год на Байкале
+        отличается особым волшебством. Развлекательную новогоднюю программу готовит почти каждая турбаза.</p>    
+    </section>
+    <section class="features">
+        <h2>Преимущества</h2>
+        <ul>
+            <li><p>7 лет успешной работы</p></li>
+            <li><p>250+ отелей на Байкале</p></li>
+            <li><p>100+ различных туров</p></li>
+            <li><p>32 000 кв. км – площадь на которой мы организовываем путешествия</p></li>
+            <li><p>50 000 довольных туристов от 3 до 85 лет</p></li>
+        </ul>    
+    </section>
+    <section class="form">
+        <h2>Забронируйте отдых на Байкале</h2>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-block">
+                    <h3 class="footer-name">Бронирование</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="#">Отели и базы отдыха</a></li>
+                        <li class="footer-item"><a href="#">Теплоходы и катера</a></li>
+                        <li class="footer-item"><a href="#">Транспортные услуги</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-block">
+                    <h3 class="footer-name">Экскурсии</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="#">Экскурсии и туры</a></li>
+                        <li class="footer-item"><a href="#">Экстрим туры</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-block">
+                    <h3 class="footer-name">Туры на Байкал</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="#">Туры Зима-Весна</a></li>
+                        <li class="footer-item"><a href="#">Туры Лето-Осень</a></li>
+                        <li class="footer-item"><a href="#">Туры охоты и рыбалки</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-block">
+                    <h3 class="footer-name">О Байкале</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="#">Карта Байкала</a></li>
+                        <li class="footer-item"><a href="#">Достопримечательности</a></li>
+                        <li class="footer-item"><a href="#">Полезная информация</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-block">
+                    <h3 class="footer-name">О нас</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="#">Контакты</a></li>
+                        <li class="footer-item"><a href="#">Агентствам</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="tour">
+                    <p class="tour-title">Турагентство «Байкальский отдых»</p>
+                    <small class="under">&copy; 2021. Все права защищены</small>
+                </div>
+                <address class="address">
+                    <div class="address-item">
+                        <p class="tour-title">Заказ туров и бронирование:</p>
+                        <ul class="contacts-list under">
+                            <li class="contact-item"><a href="tel:+79243541540">тел. 8-924-3-541-540</a></li>
+                            <li class="contact-item">
+                                <a href="mailto:baikalholiday@mail.ru">e-mail: baikalholiday@mail.ru</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="address-item">
+                        <p class="tour-title">Адрес:</p>
+                        <p class="under">
+                            г. Улан-Удэ, ул.Гражданская, 20,<br />
+                            отель «Рестон», 1 этаж
+                        </p>
+                    </div>
+                </address>
+                <div class="vector">
+                    <a href="#" class="vector-title">Политика конфиденциальности</a>
+                    <a href="#" class="vector-link">
+                        <span class="design">Дизайн</span>
+                        <img class="img" src="./images/logo2.svg" width="52.62" height="22" alt="логотип" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     
 </body>
